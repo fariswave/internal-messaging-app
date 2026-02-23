@@ -1,41 +1,23 @@
 import type { Metadata } from "next";
-import { EcommerceMetrics } from "@/components/ecommerce/EcommerceMetrics";
 import React from "react";
-import MonthlyTarget from "@/components/ecommerce/MonthlyTarget";
-import MonthlySalesChart from "@/components/ecommerce/MonthlySalesChart";
-import StatisticsChart from "@/components/ecommerce/StatisticsChart";
-import RecentOrders from "@/components/ecommerce/RecentOrders";
-import DemographicCard from "@/components/ecommerce/DemographicCard";
 
 export const metadata: Metadata = {
-  title:
-    "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
-  description: "This is Next.js Home for TailAdmin Dashboard Template",
+  title: "Internal Chat BPN | Dashboard",
+  description: "Aplikasi Pesan Internal BPN",
 };
 
-export default function Ecommerce() {
+export default function ChatDashboard() {
   return (
-    <div className="grid grid-cols-12 gap-4 md:gap-6">
-      <div className="col-span-12 space-y-6 xl:col-span-7">
-        <EcommerceMetrics />
-
-        <MonthlySalesChart />
-      </div>
-
-      <div className="col-span-12 xl:col-span-5">
-        <MonthlyTarget />
-      </div>
-
-      <div className="col-span-12">
-        <StatisticsChart />
-      </div>
-
-      <div className="col-span-12 xl:col-span-5">
-        <DemographicCard />
-      </div>
-
-      <div className="col-span-12 xl:col-span-7">
-        <RecentOrders />
+    <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div className="flex h-[450px] flex-col items-center justify-center p-4 text-center sm:h-[550px] xl:h-[650px]">
+        <div className="max-w-[450px]">
+          <h2 className="mb-3 text-2xl font-bold text-black dark:text-white">
+            Selamat Datang di Chat BPN
+          </h2>
+          <p className="font-medium">
+            Silakan pilih menu <span className="text-primary font-bold">Inbox Chat</span> di sidebar untuk melihat pesan atau mulai percakapan baru.
+          </p>
+        </div>
       </div>
     </div>
   );
