@@ -18,6 +18,23 @@ const nextConfig: NextConfig = {
         },
       },
     },
+   images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '127.0.0.1',
+        port: '8055',
+        pathname: '/assets/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '8055',
+        pathname: '/assets/**',
+      },
+    ],
+    unoptimized: true,
+  },
   
 };
 
