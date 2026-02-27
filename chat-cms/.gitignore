@@ -1,0 +1,16 @@
+# Database (Sangat penting agar chat tidak terhapus/terekspos)
+*.sqlite
+*.db
+
+# Uploads (Tempat semua file gambar/attachment chat disimpan)
+uploads/
+
+# Environment Variables (Kunci rahasia & password database)
+.env
+
+# Dependencies
+node_modules/
+
+# Extensions (Kecuali kamu membuat extension kustom)
+extensions/*
+!extensions/.gitkeep

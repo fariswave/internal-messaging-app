@@ -35,3 +35,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Env (Berisi URL API Directus-mu)
+.env
+.env.local
+.env.production
